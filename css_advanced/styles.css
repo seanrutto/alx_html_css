@@ -1,0 +1,325 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: none;
+    max-width: 100%;
+    
+}
+
+.logoImg{
+    text-align: center;
+
+    
+}
+.navigation{
+    
+}
+.navigation ul{
+    text-align: right;
+    list-style-type: none;
+    width: 30%;
+    text-align: right;
+    display: flex;
+    gap: 10px;
+    
+    
+    
+}
+
+.navigation a{
+    
+    text-decoration: none;
+}
+
+
+
+.banner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/Object.png);
+    background-repeat: no-repeat;
+    top: -66px;
+    color: white;  
+    padding: 20px; 
+
+}
+
+.schooled{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60%;
+    
+}
+h1{
+    font-size: 6em;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10rem;
+}
+.words{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.buttonFirst{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+}
+
+span{
+    padding: 5px;
+}
+.learn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 40%;
+}
+#learn{
+    height: 20%;
+}
+
+#register{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #C271FF;
+    color: white;
+    border: none;
+}
+
+.profiles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 100%;
+    margin: 20px;
+}
+
+.profilettes{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 30px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.profilettes img{
+    border-radius: 80px;
+}
+
+.smallimages{
+    height: vh;
+    width: vw;
+    margin-top: 0;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    
+}
+
+.quote{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    background-color: #C271FF;
+    padding: 20px;
+    color: white;
+    align-items: center;
+    
+    
+}
+
+.quotemg{
+    flex: 1;
+    text-align: right;
+    padding: 20px;
+        
+    
+}
+
+.quotetxt{
+    flex: 4;
+    padding: 10px;
+      
+}
+
+.videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.videosect{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+.vidsects{
+    flex: 1;
+    gap: 20px;   
+    padding: 20px;
+}
+
+.phil{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.phil img{
+    
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+
+
+}
+
+.phil h4{
+    color: #C271FF;
+    margin: 10px;
+
+}
+
+.membership{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #071629;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+}
+
+.membership h2{
+    margin: 20px;
+}
+.membership button{
+    margin: 20px;
+    background-color: #C271FF;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+}
+.membership span{
+    color: #C271FF;
+}
+
+.memberblocks{
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 80%;
+
+}
+
+.membersquares{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.bigblock{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px;
+}
+
+.midblock{
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+.smallblock{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    background-color: #071629;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot p{
+    color: white;
+    
+}
+
+.footlet{
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.lastlogo{
+    flex: 1;
+    width: 20%;
+}
+
+
+.socials{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 40%;
+}
+#quoted{
+    border-radius: 50%;
+    max-width: 100%;
+    align-self: flex-end;
+    
+}
+
+.socialpics{
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+}
+
+.socials>img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}

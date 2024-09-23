@@ -1,4 +1,20 @@
-*{
+@import url("resources/holberton_school-icon/style.css");
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -6,254 +22,231 @@
     list-style: none;
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-button{
+button {
     background-color: #FF6565;
     border-radius: 20px;
     height: 40px;
     width: 160px;
     color: white;
-    
 }
 
-body{
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-size: medium;
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
 }
 
-header{
+header {
     position: absolute;
-    width: 1000px;
+    width: 70%;
+    text-align: center;
     height: 32px;
-    left: 200px;
-    top: 27px
-
+    top: 27px;
+    left: 15%;
 }
 
-.logo{
-    width: 111px;
-    height: 32px;
-
-}
-#logo{
+.logo, #logo {
     width: 100px;
     height: 30px;
 }
 
-nav{
+nav {
     position: absolute;
     right: 0;
     height: 30px;
-    
-    
 }
 
-nav>ul{
+h1 {
+    font-size: 40px;
+}
+
+nav > ul {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
 }
 
-nav>ul>li{
+nav > ul > li {
     margin-right: 20px;
 }
 
-.banner{
-    
-    
-    top: 0px;
+.banner {
     background-image: url('images/headphones_hero_1.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
-.bannerhead{
-    
+.bannerhead {
     height: 600px;
     align-items: center;
     align-content: flex-end;
-    
 }
 
-.titles{
-    padding: 10px;
+.titles, .bannertext {
     color: white;
     text-align: center;
-
 }
 
-.buttons{
+.titles {
+    padding: 10px;
+}
+
+.buttons {
     height: 100px;
     align-content: center;
 }
 
-.bannertext{
+.bannertext {
     height: 200px;
-    text-align: center;
-    color: white;
     width: 1000px;
 }
 
-    
-
-
-.about{
-    height: 500px;
+.about, .portfolio, .contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    
 }
 
-.aboutone{
+.about {
+    height: 600px;
+}
+
+.aboutone, .story {
     height: 40%;
     text-align: center;
+    width: 60%;
+    gap: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1000px;
-    gap: 20px;
 }
 
-#paratwo{
-    width: 1000px;
-}
-
-.aboutwo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly; 
-    width: 80%;
-    margin-left: 100px;
+.aboutwo {
     height: 60%;
+    width: 60%;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.blocksone{
+.iconic {
+    font-size: 100px;
+    color: #FF6565;
+}
+
+.blocksone {
     flex: 1;
     gap: 20px;
-
-}
-
-.portfolio{
-    height: 500px;
-    background-image: url('images/headphones_hero_2.jpg');
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    
-}
-
-.story{
-    height: 40%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1000px;
-    gap: 20px;
 }
 
-.percentages{
+.portfolio {
+    height: 600px;
+    background-image: url('images/headphones_hero_2.jpg');
+    color: white;
+}
+
+.percentages {
     height: 60%;
     display: inline-flex;
     gap: 60px;
-    
 }
 
-.percent{
-    
+.percent {
     width: 200px;
     height: 200px;
     background-color: #FF6565;
-    clip-path: polygon(
-                50% 0%,    /* Top */
-                100% 38%,  /* Top Right */
-                82% 100%,  /* Bottom Right */
-                18% 100%,  /* Bottom Left */
-                0% 38%     /* Top Left */
-            );
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     margin: 50px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     
-    
-    
 }
 
-.contact{
+.contact {
     height: 500px;
+    gap: 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    
 }
 
-.contactus{
+.contactus {
     padding: 20px;
     margin-top: 20px;
 }
 
-.contactform{
+.contactform {
     height: 300px;
-    
+    width: 30vw;
 }
 
-
-
-form{
+form {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.foot{
-    display: inline-flex;
-    justify-content: space-between;
-    width: 1000px;
-    gap: 500px;
-    padding: 20px;
+input {
+    border: none;             
+    border-top: 2px solid hsl(0, 3%, 85%); 
+    background: none;         
+    outline: none;            
+    width: 100%;             
+    font-size: 16px;          
+    padding: 5px;             
 }
 
-.socials{
+  
+
+.foot {
+    width: 1000px;
+    padding: 20px;
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 500px;
+}
+
+.socials {
     position: absolute;
     display: inline-flex;
     gap: 20px;
     justify-content: space-evenly;
     height: 20px;
     right: 200px;
-    
-
 }
-.imgs{
+
+.imgs {
     background-color: white;
     border-radius: 50%;
     height: 20px;
     width: 20px;
-    
 }
-footer{
+
+footer {
+    margin-top: auto;
     height: 100px;
     background-color: #071629;
-    color: white;    
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
